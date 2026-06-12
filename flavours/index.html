@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+  <nav>
+  <div class="navbar">
+    <div class="nav-img">
+      <img src="../Home/home-img.png" alt="StickyBar Logo">
+    </div>
+
+    <div class="nav-search">
+      <i class="bi bi-search"></i>
+      <input type="text" id="searchInput" placeholder="Search flavours..." >
+      <div id="searchResults"></div>
+    </div>
+
+    <div class="nav-infos">
+      <ul class="nav-list ">
+        <li><a href="../Home/index.html" >Home</a></li>
+        <li><a href="../flavours/index.html" id="home">Flavors</a></li>
+        <li><a href="../menu/index.html">Menu</a></li>
+        <li><a href="../about/index.html">About Us</a></li>
+        <li><a href="../review/index.html">Reviews</a></li>
+        <li><a href="../contact/index.html">Contact</a></li>
+      </ul>
+
+      <button id="button" onclick="window.location.href='../flavours/index.html'">
+        Order Now <i class="bi bi-bag"></i>
+      </button>
+
+      
+    </div>
+    <div class="menu-btnn">
+        <i class="bi bi-list"></i>
+      </div>
+  </div>
+</nav>
+
+<!-- Section-1 -->
+<section class="sec-1">
+  <div class="img-sec">
+    <img src="fav-1.png" alt="">
+  </div>
+<div class="sec-info">
+  <h2>Our Delicious <i class="bi bi-heart"></i></h2>
+  <h1>Ice Cream <span>Flavours</span></h1>
+  <p>Explore our wide range of handcrafted ice creams flavours <br> made with real ingridents and lots of love</p>
+
+</div>
+</section>
+
+<!-- section -->
+
+<section >
+    <div class="sec-2">
+      <div class="sec-navbar">
+        <div class="button-nav">
+        <button class="filter-btn"  data-filter="all"><i class="bi bi-cone-striped"></i>  All Flavours</button>
+        <button class="filter-btn" data-filter="fruity"><i class="bi bi-apple" ></i>  Fruity</button>
+        <button class="filter-btn" data-filter="chocolate"><i class="bi bi-award" ></i>  Chocolate</button>
+        <button class="filter-btn" data-filter="nuts"><i class="bi bi-egg" ></i>  Nuts</button>
+        <button class="filter-btn" data-filter="special"><i class="bi bi-flower1" ></i>  Special</button>
+       <button class="filter-btn" data-filter="sugarfree"><i class="bi bi-flower1"> SugarFree</i></button> 
+       </div>
+       <div class="by-nav">
+        <select name="" id="">
+          <option value="">Sort by: popular</option>
+        </select>
+       </div>
+      </div>
+
+
+      <div class="cards-sec">
+        <div class="card-section" data-category="fruity">
+          <div class="card-img-sec">
+          <img src="ff-2.png" alt="">
+          </div>
+          <div class="card-info-sec">
+            <h3>Mango Bliss</h3>
+            <p>Sweet Mango ice cream <br>with real mango pieces.</p>
+             <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+<span>4.8</span>
+          </div>
+          <button>Add To cart <i class="bi bi-cart3"></i></button>
+          </div>
+
+           <div class="heart-pos">
+            <i class="bi bi-heart" onclick="toggleHeart(this)"></i>
+           </div>
+
+        </div>
+
+         <div class="card-section" data-category="fruity">
+          <div class="card-img-sec">
+          <img src="ff-1.png" alt="">
+          </div>
+          <div class="card-info-sec">
+            <h3>Graphes </h3>
+            <p>Sweet Graphes ice cream <br>with real Graphes pieces.</p>
+             <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+<span>4.8</span>
+          </div>
+          <button>Add To cart <i class="bi bi-cart3"></i></button>
+          </div>
+           <div class="heart-pos">
+            <i class="bi bi-heart" onclick="toggleHeart(this)"></i>
+           </div>
+        </div>
+
+         <div class="card-section" data-category="fruity">
+          <div class="card-img-sec" >
+          <img src="ff-3.png" alt="">
+          </div>
+          <div class="card-info-sec">
+            <h3>Strawberry Bliss</h3>
+            <p>Sweet strawberry ice cream <br>with real strawberry pieces.</p>
+             <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+<span>4.8</span>
+          </div>
+          <button>Add To cart <i class="bi bi-cart3"></i></button>
+          </div>
+            <div class="heart-pos">
+            <i class="bi bi-heart" onclick="toggleHeart(this)"></i>
+           </div>
+        </div>
+
+         <div class="card-section" data-category="chocolate">
+          <div class="card-img-sec">
+          <img src="../Home/ss-4.png" alt="">
+          </div>
+          <div class="card-info-sec">
+            <h3>Candy Sticky</h3>
+            <p>Sweet Stick ice cream <br>with real candies.</p>
+             <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+<span>4.8</span>
+          </div>
+          <button>Add To cart <i class="bi bi-cart3"></i></button>
+          </div>
+           <div class="heart-pos pos">
+            <i class="bi bi-heart" onclick="toggleHeart(this)"></i>
+           </div>
+        </div>
+
+         <div class="card-section" data-category="nuts">
+          <div class="card-img-sec">
+          <img src="ff-5.png" alt="">
+          </div>
+          <div class="card-info-sec">
+            <h3>Pista Nuts</h3>
+            <p>Pista ice cream <br>with real nuts pieces.</p>
+             <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+<span>4.8</span>
+          </div>
+          <button>Add To cart <i class="bi bi-cart3"></i></button>
+          </div>
+          <div class="heart-pos">
+            <i class="bi bi-heart" onclick="toggleHeart(this)"></i>
+           </div>
+        </div>
+         
+      </div>
+
+<!-- second image row -->
+
+      <div class="cards-sec">
+        <div class="card-section" data-category="fruity">
+          <div class="card-img-sec">
+          <img src="ff-4.png" alt="">
+          </div>
+          <div class="card-info-sec">
+            <h3>Graphy Curve</h3>
+            <p>Sweet graphes ice cream <br>with real curve graphes pieces.</p>
+             <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+<span>4.8</span>
+          </div>
+          <button>Add To cart <i class="bi bi-cart3"></i></button>
+          </div>
+           <div class="heart-pos">
+            <i class="bi bi-heart" onclick="toggleHeart(this)"></i>
+           </div>
+        </div>
+
+         <div class="card-section" data-category="special">
+          <div class="card-img-sec">
+          <img src="../Home/ss-1.png" alt="">
+          </div>
+          <div class="card-info-sec">
+            <h3>Coconut Tunder</h3>
+            <p>Cocounut ice cream <br>with real coconut pieces.</p>
+             <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-half"></i>
+<span>4.8</span>
+          </div>
+          <button>Add To cart <i class="bi bi-cart3"></i></button>
+          </div>
+            <div class="heart-pos pos">
+            <i class="bi bi-heart" onclick="toggleHeart(this)"></i>
+           </div>
+        </div>
+
+         <div class="card-section" data-category="fruity">
+          <div class="card-img-sec">
+          <img src="../Home/ss-2.png" alt="">
+          </div>
+          <div class="card-info-sec">
+            <h3>Pulpy Mango</h3>
+            <p>Sweet pulpy mango ice cream <br>with real mango pieces.</p>
+             <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+<span>4.8</span>
+          </div>
+          <button>Add To cart <i class="bi bi-cart3"></i></button>
+          </div>
+           <div class="heart-pos pos">
+            <i class="bi bi-heart" onclick="toggleHeart(this)"></i>
+           </div>
+        </div>
+
+         <div class="card-section" data-category="chocolate">
+          <div class="card-img-sec">
+          <img src="../Home/ss-3.png" alt="">
+          </div>
+          <div class="card-info-sec">
+            <h3>Choco Crunch</h3>
+            <p>Sweet crunch ice cream <br>with real Chocolate pieces.</p>
+             <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+             <i class="bi bi-star-half"></i>
+<span>4.8</span>
+          </div>
+          <button>Add To cart <i class="bi bi-cart3"></i></button>
+          </div>
+           <div class="heart-pos pos">
+            <i class="bi bi-heart" onclick="toggleHeart(this)"></i>
+           </div>
+        </div>
+
+         <div class="card-section" data-category="sugarfree">
+          <div class="card-img-sec">
+          <img src="../Home/w-1.jpeg" alt="">
+          </div>
+          <div class="card-info-sec">
+            <h3>Strawberry Bliss</h3>
+            <p>Sweet strawberry ice cream <br>with real strawberry pieces.</p>
+             <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+<span>4.8</span>
+          </div>
+          <button>Add To cart <i class="bi bi-cart3"></i></button>
+          </div>
+           <div class="heart-pos pos">
+            <i class="bi bi-heart" onclick="toggleHeart(this)"></i>
+           </div>
+        </div>
+         
+      </div>
+</section>
+
+
+      <div class="footer-banner">
+        <div class="footer-details">
+          <div class="left-img">
+            <img src="fav-2.png" alt="">
+          </div>
+          <div class="center-details">
+            <h2>Can't decide? Try our</h2>
+            <h3>Flavor of the Month!</h3>
+            <p>Special flavours you'll fall in Love with every month.</p>
+          </div>
+          <div class="explore-btn">
+            <button onclick="window.location.href='../menu/index.html'">Explore Now <i class="bi bi-arrow-right"></i></button>
+          </div>
+          <div class="right-img">
+            <img src="fav-3.png" alt="">
+          </div>
+        </div>
+      </div>
+
+   
+
+
+
+    <!-- Foot section -->
+    <section class="foot">
+      <div class="foot-img">
+         <img src="foot.png" alt="">
+      </div>
+
+
+      <div class="foot-info">
+        <div class="foot-1">
+          <h2>StickyBar</h2>
+          <h4>ICE CREAMS</h4>
+            <h3>StickyBar Ice Creams</h3>
+            <p>Bringing happiness one stick at a time. <br>Made with premium ingredients and  <br>lots of love</p>
+            <div class="foot-rating">
+               <i class="bi bi-instagram"></i>
+<i class="bi bi-facebook"></i>
+<i class="bi bi-twitter"></i>
+<i class="bi bi-youtube"></i>
+            </div>
+        </div>
+        <div class="div"></div>
+        <div class="foot-2">
+          <div class="foot-links">
+            <i class="bi bi-link-45deg"></i>
+           <h3> Quick Links</h3>
+          </div>
+          <div class="links-info">
+            <div class="links-data">
+            <i class="bi bi-chevron-right"></i>
+              <a href="../Home/index.html">Home</a>
+            </div>
+            <div class="links-data">
+            <i class="bi bi-chevron-right"></i>
+
+             <a href="../flavours/index.html">Flavours</a>
+            </div>
+            <div class="links-data">
+            <i class="bi bi-chevron-right"></i>
+
+              <a href="../menu/index.html">Menu</a>
+            </div>
+            <div class="links-data">
+            <i class="bi bi-chevron-right"></i>
+
+             <a href="../about/index.html">ABout Us</a>
+            </div>
+            <div class="links-data">
+            <i class="bi bi-chevron-right"></i>
+
+              <a href="../review/index.html">Reviews</a>
+            </div>
+            <div class="links-data">
+            <i class="bi bi-chevron-right"></i>
+
+              <a href="../contact/index.html">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="div"></div>
+        <div class="foot-2">
+          <div class="foot-links">
+            <i class="bi bi-gift"></i>          
+            <h3>Popular Falvours</h3>
+          </div>
+          <div class="links-info">
+            <div class="links-data">
+              <span>🍓</span>
+              <a href="../flavours/index.html"><h3>Strawberry Bills</h3></a>
+            </div>
+              <div class="links-data">
+                <span>🍫</span>
+              <a href="../flavours/index.html"><h3>Chocolate Fudge</h3></a>
+            </div>
+              <div class="links-data">
+                <span>🌼</span> 
+              <a href="../flavours/index.html"><h3>Vanilla Dream</h3></a>
+            </div>
+              <div class="links-data">
+                <span>🌿</span> 
+              <a href="../flavours/index.html"><h3>Mint Chocolate Chip</h3></a>
+            </div>
+              <div class="links-data">
+                <span>🍪</span>
+              <a href="../flavours/index.html"><h3>Cookies & Cream</h3></a>
+            </div>
+          </div>
+        </div>
+        <div class="div"></div>
+        <div class="foot-3">
+          <div class="foot-links">
+            <i class="bi bi-telephone"></i>
+              <h3>Contact Us</h3>
+          </div>
+          <div class="links-info">
+            <div class="links-data">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Chennai, Tamil Nadu</h3>
+               </div>
+               <div class="links-data">
+                <i class="bi bi-telephone"></i>
+                 <p>+91 98765 43210</p></div>
+             
+              <div class="links-data"><i class="bi bi-envelope"></i><p>hello@stickybar.com</p></div>
+              <div class="links-data"><i class="bi bi-clock"></i>Mon - Sun: 10AM - 10PM</div>
+             
+          </div>
+        </div>
+      </div>
+
+
+     
+     </section>
+
+<script src="flavour.js">
+  function toggleHeart(icon){
+  icon.classList.toggle("bi-heart")
+  icon.classList.toggle("bi-heart-fill")
+  icon.classList.toggle("liked")
+}
+</script>
+</body>
+</html>
+
+</body>
+</html>
